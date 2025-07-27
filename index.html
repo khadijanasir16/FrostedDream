@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frosted Dreams - Bakery Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://images.unsplash.com/photo-1578985545062-69928b1d9587" type="image/png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Checkout Form -->
+<div id="checkout-form" class="checkout-form hidden">
+  <h3>Checkout</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="text" placeholder="Phone Number" required><br>
+    <input type="text" placeholder="Address" required><br>
+    <button type="submit">Place Order</button>
+  </form>
+</div>
+
+<!-- Top Contact Bar -->
+  <div class="top-bar">
+  <span>Contact: sweetcakes@example.com</span>
+  <span>Call us: 0300-0000000</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <ul class="nav-left">
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cakes">Cakes</a></li>
+        <li><a href="#about">About Us</a></li> 
+      </ul>
+      <div class="logo">Frosted Dreams</div>
+      <ul class="nav-right">
+       <li>
+  <a href="https://wa.me/923353083300?text=I%20want%20to%20place%20an%20order" target="_blank"> 
+Contact
+  </a>
+</li>
+ <li class="cart-icon">
+  <a href="#">
+    <img class="cart-icon-img" src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Cart" width="20">
+    <span id="cart-count" class="cart-count-badge">0</span>
+  </a>
+</li>
+  </ul>
+  </nav>
+  </header>
+
+<!-- Hero Section -->
+  <section class="hero">
+    <h2>Delight in every bite!</h2>
+    <p>Freshly baked cakes, cupcakes, and more</p>
+    <a href="#cakes" class="order-btn">Order Now</a>
+  </section>
+
+<!-- About Section -->
+  <section id="about"></section>
+  <div class="about-text">
+    <h3 class="welcome-heading">Welcome to</h3>
+    <h2 class="brand-heading">Frosted Dreams</h2>
+    <p>
+      At Frosted Dreams, every cake is crafted with passion and precision. 
+      We use only the finest ingredients to bring joy to your celebrations. 
+      Taste the difference in every bite.
+    </p>
+  </div>
+
+<!-- Signature Section -->
+<section class="signature">
+  <h2>Signature</h2>
+  <div class="signature-carousel-container">
+    <button class="scroll-btn left-btn">‹</button>
+    
+    <div class="signature-carousel" id="signature-carousel">
+      <div class="signature-item">
+        <img src="assets/3.jpg" alt="Custom Cake">
+        <h3>Custom Cakes</h3>
+        <p>Tailored to suit all occasions and tastes.</p>
+        <button class="cart-btn" data-name="Custom Cake">Add to Cart</button>
+      </div>
+
+      <div class="signature-item">
+        <img src="assets/macarons.jpg" alt="Macarons">
+        <h3>Macarons</h3>
+        <p>Delicious and colorful French treats.</p>
+        <button class="cart-btn" data-name="Macarons">Add to Cart</button>
+      </div>
+
+      <div class="signature-item">
+        <img src="assets/cupcakes.jpg" alt="Cupcake Collections">
+        <h3>Cupcake Collections</h3>
+        <p>Assorted cupcakes perfect for sharing joy.</p>
+        <button class="cart-btn" data-name="Cupcake Collections">Add to Cart</button>
+      </div>
+    </div> <!-- Close carousel -->
+
+    <button class="scroll-btn right-btn">›</button>
+  </div> <!-- Close container -->
+</section>
+
+<!-- Video Section -->
+  <section class="video-section">
+    <h2 class="video-heading">
+      <span style="color: black;">Indulge Yourself into The</span><br>
+      <span style="color: #d14e66;">Glimpse Of Heaven</span>
+    </h2>
+    <video class="video-element" controls autoplay muted loop>
+      <source src="assets/v1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Review Section -->
+   <div class="review-slider-wrapper">
+  <div class="reviews auto-scroll">
+    <!-- review-item elements here -->
+  </div>
+</div>
+  <section class="review-section">
+    <h2 class="review-heading">Our Valued Customers</h2>
+    <div class="reviews">
+      <div class="review-item">
+        <img src="assets/cl1.jpg" alt="Client 1">
+        <p>"Absolutely loved the cake! It was as delicious as it looked."</p>
+        <h4>- Ayesha K.</h4>
+      </div>
+      <div class="review-item">
+        <img src="assets/cl2.jpg" alt="Client 2">
+        <p>"The cupcakes were soft and fresh. Perfect for my birthday!"</p>
+        <h4>- Sara M.</h4>
+      </div>
+      <div class="review-item">
+        <img src="assets/cl3.jpg" alt="Client 3">
+        <p>"Beautiful presentation and heavenly taste. 10/10!"</p>
+        <h4>- Hina R.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="text-align:center;">
+    <h3>Contact Us</h3>
+    <a href="" target="_blank">fr0steddreams@gmail.com</a>
+    <p>Instagram | Facebook | WhatsApp</p>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align:center;">
+    <p>&copy; 2025 Frosted Dreams Bakery | Made with love for sweet lovers</p>
+  </footer>
+  <script src="script.js"></script>
+ </body>
+</html>
