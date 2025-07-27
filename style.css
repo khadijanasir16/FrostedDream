@@ -6,14 +6,14 @@ body {
 }
 
 /* Top Bar */
-.top-bar {
+/* .top-bar {
   background-color: #fddbd2;
   color: #663333;
   padding: 8px 20px;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 /* Header & Nav */
 .main-header {
