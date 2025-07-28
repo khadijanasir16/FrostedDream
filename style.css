@@ -108,10 +108,10 @@ html {
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   color: #a72758;
-  font-family: 'Georgia', serif;
+  font-family: 'Great Vibes', cursive;
 }
 
 /* Hero Section */
@@ -451,30 +451,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-}
-
-/* 📸 Collage Styles */
-.collage {
-  display: flex;
-  gap: 15px;
-}
-
-.main-img {
-  width: 180px;
-  height: auto;
-  border-radius: 12px;
-}
-
-.side-images {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.side-img {
-  width: 100px;
-  height: auto;
-  border-radius: 12px;
 }
 
 /* 📝 Text Styles */
