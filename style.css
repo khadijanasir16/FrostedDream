@@ -45,14 +45,14 @@ body {
 /* Header & Nav */
 .main-header {
   background-color: #faf7f4;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .main-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgb(253, 248, 248);
+  background-color: rgb(253, 246, 246);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -129,6 +129,139 @@ body {
   z-index: 1000;
 }
 
+.nav-right { display: flex; align-items: center; gap: 15px; }
+.nav-right .dropdown { position: relative; }
+
+.nav-right .dropdown .dropdown-content {
+  font-family: 'Great Vibes', cursive;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 25px 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  width: 280px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.nav-right .dropdown:hover .dropdown-content {
+  display: block;
+  animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown-content h4 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  color: #000;
+  font-weight: 600;
+}
+
+.dropdown-content h4 span {
+  color: #d14e66; /* pink color for "Social Media" */
+}
+
+.dropdown-content img {
+  width: 44px;
+  margin: 0 14px;
+  transition: transform 0.3s;
+}
+
+.dropdown-content img:hover {
+  transform: scale(1.15);
+}
+
+.social-heading {
+  font-size: 20px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.follow-black {
+  color: black;
+}
+
+.social-pink {
+  color: #d14e66; /* soft pink */
+}
+
+.about-dropdown {
+  position: relative;
+}
+
+.about-slider {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 20px;
+  gap: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 700px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.about-dropdown:hover .about-slider {
+  display: flex;
+}
+
+.slider-left {
+  display: flex;
+  gap: 12px;
+}
+
+.slider-left img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.slider-right h4 {
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.slider-right ul {
+  list-style-type: square;
+  padding-left: 20px;
+  font-size: 18px;
+  color: #444;
+font-family: 'Garamond', serif;
+}
+
+.slider-right li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-family: 'Garamond', serif;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Smooth scrolling for in-page navigation */
 html {
   scroll-behavior: smooth;
@@ -189,7 +322,7 @@ html {
 }
 
 .order-btn:hover {
-  background-color: #d19ba7;
+  background-color: #c05971;
   transform: scale(1.08);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

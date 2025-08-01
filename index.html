@@ -21,19 +21,60 @@
       <li><a href="#">Home</a></li>
       <li><a href="#menu">Menu</a></li>
       <li><a href="#cakes">Cakes</a></li>
-      <li><a href="#about">About Us</a></li> 
+<li class="dropdown about-dropdown">
+  <a href="#" class="dropdown-toggle">About Us</a>
+  <div class="about-slider">
+    <div class="slider-left">
+      <img src="assets/cakee.jpg" alt="Image 1" />
+      <img src="assets/h1.jpg" alt="Image 2" />
+    </div>
+    <div class="slider-right">
+      <h4>
+        <span style="color: black; font-family: 'Brush Script MT', cursive;">Why</span>
+        <span style="color: #aa325a; font-family: 'Brush Script MT', cursive;">You Order From Us?</span>
+      </h4>
+      <ul>
+        <li>
+          <strong>Freshly Baked Everyday:</strong><br />
+          We bake only after you order always fresh and warm.
+        </li>
+        <li>
+          <strong>Hygiene Maintained:</strong><br />
+          Clean kitchen, sanitized tools, and safety followed.
+        </li>
+        <li>
+          <strong>Quality Ingredients:</strong><br />
+          Only premium chocolate, butter, and flour no compromise.
+        </li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+
     </ul>
     <div class="logo">Frosted Dreams</div>
     <ul class="nav-right">
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#socil media">Social Media</a></li>
-      <li class="cart-icon">
-        <a href="#">
-          <img class="cart-icon-img" src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Cart" width="20">
-          <span id="cart-count" class="cart-count-badge">0</span>
-        </a>
-      </li>
-    </ul>
+    <li><a href="#contact">Contact</a></li>
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle">Social Media</a>
+    <div class="dropdown-content">
+    <h4><span style="color: black;">Follow us on</span> <span style="color: #e91e63;">Social Media</span></h4>
+    <a href="https://instagram.com/fr0sted.dreams_" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="32">
+    </a>
+    <a href="https://wa.me/923361103006" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="32">
+    </a>
+    </div>
+</li>
+    <li class="cart-icon">
+    <a href="#">
+    <img class="cart-icon-img" src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Cart" width="20">
+    <span id="cart-count" class="cart-count-badge">0</span>
+  </a>
+  </li>
+  </ul>
   </nav>
 </header>
 
@@ -136,7 +177,6 @@
   <p>&copy; 2025 Frosted Dreams Bakery | Made with love for sweet lovers</p>
 </footer>
 
-<!-- Scripts -->
 <script src="script.js"></script>
 <script>
   window.addEventListener("load", function () {
